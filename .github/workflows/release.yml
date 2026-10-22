@@ -29,7 +29,7 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: package
-        run: build.sh
+        run: ./build.sh
       - name: generate version
         id: version
         run: echo "version=$(cat VERSION)" >> "$GITHUB_OUTPUT"
